@@ -441,6 +441,18 @@ class Device(NestBase):
         return self._shared['hvac_emer_heat_state']
 
     @property
+    def leaf(self):
+        return self._device['leaf']
+
+    @property
+    def leaf_threshold_cool(self):
+        return self._device['leaf_threshold_cool']
+
+    @property
+    def leaf_threshold_heat(self):
+        return self._device['leaf_threshold_heat']
+
+    @property
     def online(self):
         return self._track['online']
 
